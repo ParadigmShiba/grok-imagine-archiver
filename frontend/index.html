@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok Imagine Collection</title>
+    <!-- Using Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">
+            <h1>Grok <span>Gallery</span></h1>
+        </div>
+        <div class="header-controls">
+            <input type="text" id="search-input" class="search-bar" placeholder="🔍 Search prompt or time...">
+            <label class="toggle-label">
+                <input type="checkbox" id="hide-zero-toggle">
+                <span>Hide Empty</span>
+            </label>
+        </div>
+        <div class="stats" id="stats-container">
+            Loading...
+        </div>
+    </header>
+
+    <main>
+        <div class="gallery-grid" id="gallery-container">
+            <!-- Skeleton loading animation -->
+            <div class="loading-spinner"></div>
+        </div>
+    </main>
+
+    <!-- Modal for enlarged image view (Dynamic event binding point) -->
+    <div id="image-modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <img src="" alt="Enlarged" id="modal-img">
+        </div>
+    </div>
+
+    <!-- Application logic separated to app.js -->
+    <script src="app.js"></script>
+</body>
+</html>

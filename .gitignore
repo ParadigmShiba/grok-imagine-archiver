@@ -1,0 +1,16 @@
+venv/
+.env
+__pycache__/
+gallery/
+*.pyc
+.idea/
+.vscode/
+
+# Browser profiles
+chrome_profile/
+playwright_profile/
+test_profile/
+
+# Cache
+gallery_cache.json
+video-gallery/
