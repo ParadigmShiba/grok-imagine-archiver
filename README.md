@@ -25,8 +25,10 @@ The core focus of the project is a dual-track approach: **Background WSS Interce
 ## 🚀 Quick Start
 
 ### 1. Install Environment and Dependencies
-Ensure you have Python 3.10+ installed, and execute the following in the project root directory:
+Ensure you have Python 3.10+ installed. Open your terminal and execute the following commands to clone the repository and set up the environment:
 ```powershell
+git clone https://github.com/ParadigmShiba/grok-imagine-archiver.git
+cd grok-imagine-archiver
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
